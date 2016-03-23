@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Allan The Benevolent</title>
+    
 
-    <title>Allan Wong's Personal Website</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Stylesheets
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
-</head>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  </head>
+    
+    
+  <body id="page-top" class = "index" >
+    <!--Navbar
+    ================================================== -->
     <nav class="navbar navbar-default navbar-fixed-top" >
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
+              <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Allan Wong</a>
+            </div>    
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="#page-top">Allan Wong</a>
+             
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            
+              <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
 					<li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#about" class = "page-scroll">About</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="#skills" class= "page-scroll">Skills</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#project">Projects</a>
+                        <a href="#projects" class ="page-scroll">Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" class ="page-scroll">Contact</a>
+                    </li>
+                    <li class ="page-scroll">
+                         <a href="link/to/your/download/file" download="AllanWongResume">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -67,33 +78,38 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container text-center">
+
+            <div class="content">
+                <h1>Allan Wong</h1>
+                <hr>
+                <br>
+                <div class="header-text btn">
+                    <h1><span id="head-title"></span></h1>
+                </div>
+            </div>
+
+            <a href="#about" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>      
+        </div>
+    </section>
+
+    <!-- About me Section -->  <!--Convert to about me page -->
+      <section id = "about">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/ChibiMaker1.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Allan Wong</span>
-                        <hr class="star-light">
-                        <span class="skills">Software Developer - Entrepreneur - Philanthropist</span>
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                        <hr>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-	
-	<!-- About Section -->
-    <section  id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="colored">About</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
+                   <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
 					<img class="img-responsive" src="img/aboutprofile.png" alt="">
                     <p>
 						<b>Name:</b>
@@ -105,9 +121,8 @@
 						<b>Age</b>: 22
 					</p>
                 </div>
-				
-				
-                <div class="col-lg-4 col-lg-offset-1">
+					
+                <div class="col-lg-5 col-lg-offset-1">
                     <p>
 					I am a young entrepreneur looking for opportunities to utilize the skills and assets I’ve attained from college. I’m also a philanthropist who believes that kindness is the greatest quality of being human.  I’m a get right into work type of guy who has involved himself and managed various projects. I love to cook and eat delicious food. I love to build relations with people and listen to their life stories and their ideals. I'm still searching for what I really want to do but the statement that I'll always stand by is:</p>
 					<p class ="quotes">"Kindness is the language I speak".
@@ -127,119 +142,252 @@
 							<li>
                                 <a href="https://www.instagram.com/allantakespictures/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
+                            <li>
+                                <a href="https://allantheniceguy.yelp.com" class="btn-social btn-outline"><i class="fa fa-fw fa-yelp"></i></a>
+                            </li>
                         </ul>
 
             </div>
+         </div>
+            
+
+                <p class = "text-center"><a href="#skills" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+                    </a></p>
+                </div>
+      </section>
+
+
+    <!-- Services Section -->
+    <section id="skills">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Skills</h2>
+                        <hr>
+                    </div>
+                    <p>A quick glimpse of things I'm capable of doing.</p>
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <span class="fa fa-cloud fa-3x"></span>
+                        <h4>Web Development and Design</h4>
+                         <p>Working on design and front end developing, I’ve created various websites and web applications for different organizations I’m involved with as well as my personal projects like this portfolio site. </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <span class="fa fa-book fa-3x"></span>
+                        <h4>Programing Knowledge</h4>
+                        <p>
+                        <ul class = "two-col-special">    
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Python</li>
+                            <li>C,C++</li>
+                            <li>Ruby/Rails</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>JQuery</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <span class="fa fa-globe fa-3x"></span>
+                        <h4>Project & Product Management</h4>
+                        <p>I’ve spearheaded various projects as a team leader or manager for course work, student organizations, and various independent projects. Experienced with working with group numbers ranging from 5-20. </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="#projects" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>
         </div>
     </section>
 
-    <!-- Project Grid Section -->
-    <section class="success" id="project">
+    <div class = 'gap'>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    
+    <!-- Portfolio Section -->
+    <section id="projects">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="star-light">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>My Projects</h2>
+                        <hr>
+                    </div>
+                    <p>Check out the things I've done and am currently involved with.</p>
                 </div>
             </div>
+            <div class="space"></div>
+        </div>
+        
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4 project-item">
-                    <a href="#projectModal1" class="project-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i> <!--Does the search logo when hover-->
-                            </div>
+                <div class="col-md-4 col-sm-5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#projectModal1" class="project-link" data-toggle="modal">
+                                <div class="hover-text">
+                                    <h5>Founder</h5>
+                                    <p class="lead">Just A Moment</p>
+                                    <div class="hline"></div>
+                                </div>
+                                <img src="img/projects/JustAMoment.png" class="img-responsive" alt="...">
+                            </a>
                         </div>
-                        <img src="img/project/JustAMoment.png" class="img-responsive project" alt="">
-                    </a>
-					<br>
-					<p class= "text-center">Just A Moment</p>
+                    </div>
                 </div>
-				
-                <div class="col-sm-4 project-item">
-                    <a href="#projectModal2" class="project-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                
+                
+                     <div class="col-md-4 col-sm-5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h5>Project Manager</h5>
+                                    <p class="lead">Tastebuddies</p>
+                                    <div class="hline"></div>
+                                </div>
+                            </a>
+                            <img src="img/projects/tastebuddies.png" class="img-responsive" alt="...">
                         </div>
-                        <img src="img/project/GlobalTies.png" class="img-responsive project" alt="">
-                    </a>
-					<br>
-					<p class= "text-center">Global Ties, Humanitarian Engineering </p>
+                    </div>
                 </div>
-                <div class="col-sm-4 project-item">
-                    <a href="#projectModal3" class="project-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                
+                <div class="col-md-4 col-sm-5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#projectModal3" class="project-link" data-toggle="modal">
+                                <div class="hover-text">
+                                    <h5>Vice President</h5>
+                                    <p class="lead">Multi Asian Student Association</p>
+                                    <div class="hline"></div>
+                                </div>
+                                <img src="img/projects/masabanner.png" class="img-responsive" alt="...">
+                            </a>
                         </div>
-                        <img src="img/project/masabanner.png" class="img-responsive project" alt="">
-                    </a>
-					<br>
-					<p class= "text-center">Multi Asian Student Association</p>
+                    </div>
                 </div>
+
+                
+                
+                <div class="col-md-4 col-sm-5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h5>Web Developer/Design Lead</h5>
+                                    <p class="lead">Step2Rest</p>
+                                    <div class="hline"></div>
+                                </div>
+                            </a>
+                            <img src="img/projects/SteptoRestLogo.jpg" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#projectModal2" class="project-link" data-toggle="modal">
+                                <div class="hover-text">
+                                    <h5>Team Lead</h5>
+                                    <p class="lead">Global Ties</p>
+                                    <div class="hline"></div>
+                                </div>
+                            </a>
+                            <img src="img/projects/GlobalTies.png" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col-md-4 col-sm-5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h5>Founder</h5>
+                                    <p class="lead">ΒΔΣ(Beta Delta Sigma)</p>
+                                    <div class="hline"></div>
+                                </div>
+                            </a>
+                            <img src="" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
+        <div class = "text-center">
+        <a href="#contact" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>
+        </div>
     </section>
+
+
 
 
     <!-- Contact Section -->
-    <section id="contact">
-       
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-12 text-center">
-                      <h2 class="colored">Contact Information</h2>
-                    <hr class="star-primary">
-                </div>
-                </div>
-                <div class="row">
+  
+     <section id = "contact">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Contact me</h2>
+                        <hr>
+                    </div>
                     
                     <div class="text-center">
                         <h3>Contact</h3>
-						<p>510-928-0899 <br>
-							WongAllanW@gmail.com</p>
-                    </div>  
-                
-                  <div class="text-center">
+						<p>510-928-0899<br>
+				           WongAllanW@gmail.com
+                        </p>
+                     
                         <h3>Send me mail</h3>
                         <p>
 						4165 Executive Drive<br>
 						La Jolla, CA 92037 <br>
 						</p>
                     </div>   
-                    </div>
-                </div>
-               
-            
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Website created by Allan Wong
-                    </div>
                 </div>
             </div>
+         </div>
+    </section>
+    <!--Footer --> 
+    <nav id="footer">
+        <div class="container">
+             <div class="text-center">
+                <p>Coded and maintained by Allan Wong</p>
+            </div>
         </div>
-    </footer>
+    </nav>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- project Modals -->
-    <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <!----Popup Project modals-->
+      <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -252,8 +400,8 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Just A Moment</h2>
-                            <hr class="star-primary">
-                            <img src="img/project/JustAMoment.png" class="img-responsive img-centered" alt="">
+                            <hr>
+                            <img src="img/projects/JustAMoment.png" class="img-responsive img-centered" alt="">
                             <p>“Just a Moment” previously named NGN(Nice Guy/Girl Nation) is a project dedicated to spreading kindness and appreciation to one another. Feel good while doing good. It takes just a moment in an individual’s life to make a difference in another. The purpose of this project is to encourage individuals of this generation to take a step back from their busy, fast-paced lives and take a moment to appreciate what they have and what they are able to do. Kindness is the language we speak and we believe that a little generosity here and there can create a positive ripple effect to the community as a whole.
 <br> I was the founder and content creator for Just A Moment. I started at the end of my freshman year as an undergrad and it gain traction quite rapidly. I lead various successful projects and campaign to promote kindness through this organization. I successfully achieved a partnership with a dance consulting firm which soon decided to adapt and run the project with various volunteers.
  </p>
@@ -278,6 +426,9 @@
             </div>
         </div>
     </div>
+    
+    <!----Global Ties--->
+    
     <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -291,8 +442,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Global Ties Town and Country Team</h2>
-                            <hr class="star-primary">
-                            <img src="img/project/GlobalTies.png" class="img-responsive img-centered" alt="">
+                            <img src="img/projects/GlobalTies.png" class="img-responsive img-centered" alt="">
                             <p>Global TIES - Teams in Engineering Service is an innovative humanitarian engineering program of the Jacobs School of Engineering at UC San Diego.
 <br>Global TIES teams give students an opportunity to apply their skills in a real-world setting while learning the role that engineering and technology can play in solving the local and global problems.
 <br>I was part of this program for around 2 years and served as a team lead for one of the sub projects. The team I was in was called Town and Country Learning Center. We were in charge of providing a to educate and enhance the environment for the students that attend the learning center. I was in charge of two mini projects within the group. The first project was a music application that incorporated an onsite piano that taught students basic key skills and allowed them to showcase their work. The 2nd project was a sensor system to help notify students when they would need to water and care for their plants in their gardens. I’ve logged and documented all my work for continuity. I no longer am part of the project and have passed on my work to the next generation of students taking this program. 
@@ -318,6 +468,8 @@
             </div>
         </div>
     </div>
+    
+    <!--- MASA-->>
     <div class="project-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -331,8 +483,8 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>MASA(Multi Asian Student Association)</h2>
-                            <hr class="star-primary">
-                            <img src="img/project/masabanner.png" class="img-responsive img-centered" alt="">
+
+                            <img src="img/projects/masabanner.png" class="img-responsive img-centered" alt="">
                             <p>UCSD MASA is a social-cultural organization dedicated to educating the community of the rich diversity of the Asian student body of UCSD. It’s noted as one of the largest student run organization on the UCSD campus. MASA has been established as an all inclusive organization since 1999 and is continue to strive to grow their ever large network. 
 <br>I’ve served 2 years on board and am now the current Vice President of this lovely organization. I’ve managed and facilitated various large community events hosted by this organization. I managed a team of 19 other board members to create luxurious fun filled events for the student body at UCSD. I’ve also been the production manager for one of the largest student run dance competition in California. I’ve completely revamped and improved the organization’s staff structural system. I also sparked the jump to incorporate social media and technology to further improve membership and functionality of the organizations. I am currently managing a small project team that is in charge of developing the organizations new and improved website. I’ve exponentially grew the amount of member participant in our events. This organization is one of my proudest contributions to the UCSD community. 
 </p>
@@ -357,6 +509,8 @@
             </div>
         </div>
     </div>
+    
+    <!---Template-->
     <div class="project-modal modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -370,7 +524,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/project/game.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -394,99 +547,35 @@
             </div>
         </div>
     </div>
-    <div class="project-modal modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/project/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project-modal modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/project/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/typed.js"></script>
+    
+      
+    <!-- Script for typing segment -->   
+    <script>
+      $(function(){
+          $("#head-title").typed({
+            strings: ["An Entreprenuer^1000", " A Philanthropist^1000", "A Chef^1000" ,"Actually...^2000","Just Someone Nice To Talk To^3000"],
+            typeSpeed: 100,
+            loop: true,
+            startDelay: 100
+          });
+      });
+    </script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
-</body>
-
+  </body>
 </html>
