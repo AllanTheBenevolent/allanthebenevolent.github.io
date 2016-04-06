@@ -13,12 +13,10 @@
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
+   
+    <!--<link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
 
-    <!-- Slider
-    ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
 
     <!-- Stylesheets
     ================================================== -->
@@ -43,16 +41,16 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-            </div>    
-            <div class="navbar-header page-scroll">
-                <a class="navbar-brand page-scroll" href="#page-top">Allan Wong</a>
+                <a class="navbar-brand page-scroll navbar-topleft" href="#page-top">Allan Wong</a>
              
             </div>
             
               <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right navbar">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -79,14 +77,14 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" class ="animatedParent">
         <div class="container text-center">
 
             <div class="content">
-                <h1>Allan Wong</h1>
+                <h1 class ="animated bounceInLeft">Allan Wong</h1>
                 <hr>
                 <br>
-                <div class="header-text btn">
+                <div class="header-text btn animated bounceInRight">
                     <h1><span id="head-title"></span></h1>
                 </div>
             </div>
@@ -99,19 +97,19 @@
 
     <!-- About me Section -->  <!--Convert to about me page -->
       <section id = "about">
-        <div class="container">
+        <div class="container animatedParent" data-sequence = "500">
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="section-title">
-                        <h2>About Me</h2>
+                        <h2 class = "animated bounceInRight" data-id = '1' data-appear-top-offset='-400'>About Me</h2>
                         <hr>
                     </div>
                 </div>
             </div>
                    <div class="row">
-            <div class="col-lg-4 col-lg-offset-1">
-					<img class="img-responsive" src="img/aboutprofile.png" alt="">
-                    <p>
+            <div class="col-lg-4 col-lg-offset-1" data-id = '2' >
+					<img class="img-responsive animated bounceInLeft" data-id = '2' src="img/allan.jpg" alt="">
+                    <p class = "animated bounceInLeft" data-id = '2'>
 						<b>Name:</b>
 						Allan Wong<br>
 						<b>Education</b>:
@@ -123,26 +121,28 @@
                 </div>
 					
                 <div class="col-lg-5 col-lg-offset-1">
-                    <p>
-					I am a young entrepreneur looking for opportunities to utilize the skills and assets I’ve attained from college. I’m also a philanthropist who believes that kindness is the greatest quality of being human.  I’m a get right into work type of guy who has involved himself and managed various projects. I love to cook and eat delicious food. I love to build relations with people and listen to their life stories and their ideals. I'm still searching for what I really want to do but the statement that I'll always stand by is:</p>
-					<p class ="quotes">"Kindness is the language I speak".
+                    <p class = "animated bounceInRight" data-id ='2'>
+                    I am a young entrepreneur looking for opportunities to utilize the skills and assets I’ve attained from college to make a difference in the world. I’m also a philanthropist who believes that kindness is the greatest quality of being human.  I’m the type of person who likes to get himself involve with various projects and activities. Through this, I have found a passion and interest in management. Mainly in the technical fields dealing with product and project management. 
+                    <br>
+                    I love to cook and eat delicious food. I love to build relations with people and listen to their life stories and their ideals. I always believe in the good of peoeple and the statement that I'll always stand by is:</p>
+					<p class ="blockquote animated bounceInRight" data-id = '3'>"Kindness is the language I speak".
 					</p>
                     
-                    <h3>See me around the web</h3>
+                    <h3 class = "animated bounceInRight" data-id = '4'>See me around the web</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li class = "animated rollIn" data-id = '5'>
                                 <a href="https://www.facebook.com/allan.wong.5" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li>
+                            <li class = "animated rollIn" data-id = '6'>
                                 <a href="https://github.com/AllanTheBenevolent" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
-                            <li>
+                            <li class = "animated rollIn" data-id = '7'>
                                 <a href="https://www.linkedin.com/in/allan-wong-78955293" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-							<li>
+							<li class = "animated rollIn" data-id = '8'>
                                 <a href="https://www.instagram.com/allantakespictures/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
-                            <li>
+                            <li class = "animated rollIn" data-id = '9'>
                                 <a href="https://allantheniceguy.yelp.com" class="btn-social btn-outline"><i class="fa fa-fw fa-yelp"></i></a>
                             </li>
                         </ul>
@@ -157,12 +157,17 @@
                 </div>
       </section>
 
+      <section id ="gap">
 
-    <!-- Services Section -->
+          
+          <div class ="container"></div>  
+      </section>
+      
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="container text-center">
+        <div class="container text-center animatedParent ">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2 animated bounceIn data-appear-top-offset='-400'">
                     <div class="section-title">
                         <h2>Skills</h2>
                         <hr>
@@ -174,44 +179,70 @@
             <div class="space"></div>
 
             <div class="row">
-
+                
                 <div class="col-md-4 col-sm-4">
-                    <div class="service">
+                    <div class="service animated bounceInLeft">
                         <span class="fa fa-cloud fa-3x"></span>
                         <h4>Web Development and Design</h4>
                          <p>Working on design and front end developing, I’ve created various websites and web applications for different organizations I’m involved with as well as my personal projects like this portfolio site. </p>
+                    
                     </div>
-                </div>
+                </div> 
                 
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-4 col-sm-4 animated bounceIn">
                     <div class="service">
                         <span class="fa fa-book fa-3x"></span>
                         <h4>Programing Knowledge</h4>
-                        <p>
-                        <ul class = "two-col-special">    
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Python</li>
-                            <li>C,C++</li>
-                            <li>Ruby/Rails</li>
-                            <li>PHP</li>
-                            <li>SQL</li>
-                            <li>JQuery</li>
-                        </ul>
-                        </p>
+                    
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>HTML</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Expert</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="90%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>CSS</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Expert</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>JAVASCRIPT</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Advance</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>JAVA</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Proficient</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>PYTHON</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Advance</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>SQL</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Proficient</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title" style="background: #89bdd3;"><span>JQUERY</span></div>
+                        <div class="skillbar-bar" style="background: #9ad3de;"></div>
+	                   <div class="skill-bar-percent">Average</div>
+                    </div>
+                    
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-4">
+                
+                <div class="col-md-4 col-sm-4 animated bounceInRight">
                     <div class="service">
                         <span class="fa fa-globe fa-3x"></span>
                         <h4>Project & Product Management</h4>
-                        <p>I’ve spearheaded various projects as a team leader or manager for course work, student organizations, and various independent projects. Experienced with working with group numbers ranging from 5-20. </p>
+                        <p>I’ve spearheaded various projects as a team leader and manager for course work, student organizations, and various independent projects. I've had experience working with group numbers ranging from 5-20. Combining my technical knowledge and business ethics, I've become an ideal leader for many projects and deliverables. </p>
                         
                     </div>
-                </div>
+                </div> 
+                
             </div>
             <a href="#projects" class="down-btn page-scroll">
                 <span class="fa fa-angle-down"></span>
@@ -241,104 +272,10 @@
             <div class="space"></div>
         </div>
         
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-sm-5">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#projectModal1" class="project-link" data-toggle="modal">
-                                <div class="hover-text">
-                                    <h5>Founder</h5>
-                                    <p class="lead">Just A Moment</p>
-                                    <div class="hline"></div>
-                                </div>
-                                <img src="img/projects/JustAMoment.png" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+       
                 
                 
-                     <div class="col-md-4 col-sm-5">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#projectModal5" class="project-link" data-toggle="modal">
-                                <div class="hover-text">
-                                    <h5>Project Manager</h5>
-                                    <p class="lead">Tastebuddies</p>
-                                    <div class="hline"></div>
-                                </div>
-                            </a>
-                            <img src="img/projects/tastebuddies.png" class="img-responsive" alt="...">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-sm-5">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#projectModal3" class="project-link" data-toggle="modal">
-                                <div class="hover-text">
-                                    <h5>Vice President</h5>
-                                    <p class="lead">Multi Asian Student Association</p>
-                                    <div class="hline"></div>
-                                </div>
-                                <img src="img/projects/masabanner.png" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                
-                
-                <div class="col-md-4 col-sm-5">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#projectModal4" class="project-link" data-toggle="modal">>
-                                <div class="hover-text">
-                                    <h5>Web Developer/Design Lead</h5>
-                                    <p class="lead">Step2Rest</p>
-                                    <div class="hline"></div>
-                                </div>
-                            </a>
-                            <img src="img/projects/SteptoRestLogo.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-sm-5">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#projectModal2" class="project-link" data-toggle="modal">
-                                <div class="hover-text">
-                                    <h5>Team Lead</h5>
-                                    <p class="lead">Global Ties</p>
-                                    <div class="hline"></div>
-                                </div>
-                            </a>
-                            <img src="img/projects/GlobalTies.png" class="img-responsive" alt="...">
-                        </div>
-                    </div>
-                </div>
-          
-                <div class="col-md-4 col-sm-5">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#projectModal6" class="project-link" data-toggle="modal">
-                                <div class="hover-text">
-                                    <h5>Founder</h5>
-                                    <p class="lead">ΒΔΣ(Beta Delta Sigma)</p>
-                                    <div class="hline"></div>
-                                </div>
-                            </a>
-                            <img src="img/projects/transparentbaebanner.jpg" class="img-responsive" alt="...">
-                        </div>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </div>
+           
         <div class = "text-center">
         <a href="#contact" class="down-btn page-scroll">
                 <span class="fa fa-angle-down"></span>
@@ -368,11 +305,8 @@
                      
                         <h3>Send me mail</h3>
                         <p>
-						4165 Executive Drive<br>
-						La Jolla, CA 92037 <br>
-                            or<br>
                         1617 Sagewood Avenue<br>
-                            San Leandro, CA 94579<br>
+                        San Leandro, CA 94579<br>
 						</p>
                     </div>   
                 </div>
@@ -389,295 +323,7 @@
     </nav>
 
     
-    <!----Popup Project modals-->
-      <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Just A Moment</h2>
-                            <hr>
-                            <img src="img/projects/JustAMoment.png" class="img-responsive img-centered" alt="">
-                            <p>“Just a Moment” previously named NGN(Nice Guy/Girl Nation) is a project dedicated to spreading kindness and appreciation to one another. Feel good while doing good. It takes just a moment in an individual’s life to make a difference in another. The purpose of this project is to encourage individuals of this generation to take a step back from their busy, fast-paced lives and take a moment to appreciate what they have and what they are able to do. Kindness is the language we speak and we believe that a little generosity here and there can create a positive ripple effect to the community as a whole.
-<br> I was the founder and content creator for Just A Moment. I started at the end of my freshman year as an undergrad and it gain traction quite rapidly. I lead various successful projects and campaign to promote kindness through this organization. I successfully achieved a partnership with a dance consulting firm which soon decided to adapt and run the project with various volunteers.
- </p>
-                            <ul class="list-inline item-details">
-								<li>Client:
-                                    <strong> UC San Diego
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>September 2013 - June 2015
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Non-Profit
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!----Global Ties--->
-    
-    <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Global Ties Town and Country Team</h2>
-                            <img src="img/projects/GlobalTies.png" class="img-responsive img-centered" alt="">
-                            <p>Global TIES - Teams in Engineering Service is an innovative humanitarian engineering program of the Jacobs School of Engineering at UC San Diego.
-<br>Global TIES teams give students an opportunity to apply their skills in a real-world setting while learning the role that engineering and technology can play in solving the local and global problems.
-<br>I was part of this program for around 2 years and served as a team lead for one of the sub projects. The team I was in was called Town and Country Learning Center. We were in charge of providing a to educate and enhance the environment for the students that attend the learning center. I was in charge of two mini projects within the group. The first project was a music application that incorporated an onsite piano that taught students basic key skills and allowed them to showcase their work. The 2nd project was a sensor system to help notify students when they would need to water and care for their plants in their gardens. I’ve logged and documented all my work for continuity. I no longer am part of the project and have passed on my work to the next generation of students taking this program. 
- </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong> Town and Country Learning Center
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong> March 2013- June 2015
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong> Humanitarian Engineering, Non Profit
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--- MASA-->>
-    <div class="project-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>MASA(Multi Asian Student Association)</h2>
-
-                            <img src="img/projects/masabanner.png" class="img-responsive img-centered" alt="">
-                            <p>UCSD MASA is a social-cultural organization dedicated to educating the community of the rich diversity of the Asian student body of UCSD. It’s noted as one of the largest student run organization on the UCSD campus. MASA has been established as an all inclusive organization since 1999 and is continue to strive to grow their ever large network. 
-<br>I’ve served 2 years on board and am now the current Vice President of this lovely organization. I’ve managed and facilitated various large community events hosted by this organization. I managed a team of 19 other board members to create luxurious fun filled events for the student body at UCSD. I’ve also been the production manager for one of the largest student run dance competition in California. I’ve completely revamped and improved the organization’s staff structural system. I also sparked the jump to incorporate social media and technology to further improve membership and functionality of the organizations. I am currently managing a small project team that is in charge of developing the organizations new and improved website. I’ve exponentially grew the amount of member participant in our events. This organization is one of my proudest contributions to the UCSD community. 
-</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong> MASA
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong> March 2014 - June 2016
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Administration/Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="project-modal modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Step2Rest</h2>
-                            <img src="img/projects/SteptoRestLogo.jpg" class="img-responsive img-centered" alt="">
-                            <p>Step2Rest is product developed by Vincent Baiera, who is the founder of the startup company. The step2rest is the first product designed specifically for seniors to address these issues. Step2Rest can help senior citizens remain independent and prevent falls and injuries. The step2rest is designed to make the process of getting in and out of bed easier and safer. 
-<br>
-I worked as a web designer and web developer for their e-commerce website which is responsible for selling and marketing their product. I manage a team of student interns who are responsible for maintaining upkeep of the website as well as marketing the product to the public. I work directly with the founder, Vincent to provide a functional website and marketing team to aid in the expansion of not only the product but the company itself. I worked closely with him in regards of decisions being made for the website and the student marketing team.
-</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Vincent Baiera, Baiera Enterprises
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>December 2015 - Present
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Webd Developer/Designer
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="project-modal modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Tastebuddies</h2>
-                            <img src="img/projects/tastebuddies.png" class="img-responsive img-centered" alt="">
-                            <p>Tastebuddies is a web application that I designed and developed for a HCI(Human Computer Interaction) design class. I managed a group of three students to develop a design prototype of the application within 10 weeks. The applications purpose was inspired by the need for students getting encouragement to cook, since we believed that cooking was an essential part of life and it’s a skill that many college students lack and may benefit from learning but just lack the effort to. Through the course we did many observations and design mock ups to come up with the applications core values and functions. After many prototyping and researching we developed an application that takes in an input of ingredients and returns a list of recipes the user can create with the ingredients inputted.  We also created a gamification aspect to the application by allowing users to collect “tastebuddies” or characters as they continue to use the application and cook more recipes. The concept was to have tastebuddies become companions to cook with and be the encouragement users need to pursue the culinary arts.
-<br>
-I was the person who introduced the idea of cooking as a need for this project and became assigned as the product manager. The development and design of the entire application was an enriching experience. I learned a lot in the technical side as well as learning how to be a product manager when dealing with design with users and addressing user and market needs.
-<br>
-You can check by clicking the link <a href = “tastebuddies.heroku.com/cook”>here </a>
-
-</p>
-                            <ul class="list-inline item-details">
-                                <li>Purpose:
-                                    <strong> Class design project
-                                    </strong>
-                                </li
-                                <li>Date:
-                                    <strong>January 2015 - Present
-                                    </strong>
-                                </li>
-                                <li>Position:
-                                    <strong>Product Manager
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    <div class="project-modal modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>ΒΔΣ(Beta Delta Sigma)</h2>
-                            <img src="img/projects/BAE.png" class="img-responsive img-centered" alt="">
-                            <p> ΒΔΣ or Beta Delta Sigma, which stands for “Best Dim Sum” was originally a group created for entertainment purposes and just inside joke towards the Greek community. However the letters and mission concept was quite intriguing to peers where it started to become a larger organization. Having the concept originally being a play on the letters it soon developed into a philanthropist group. Dim Sum in Cantonese or Chinese culture being its literal translation is “touch the heart” soon became a motto for the group. The motto that every member should be inspired to touch the hearts of all those who cross their paths and remember to always strive to be an influence to others in some positive manner. 
-<br>
-I was one of the four founders who never expected such concept to gain such traction. With the support of eager friends and colleagues, the group grew exponentially and became a popular social group that was dedicated to make a change in individuals’ lives. We did various small charities and events for the community and continue to reach out to individuals’ heart to share the culture of Dim Sum as well as the need for humanity to love one another. This organization was one of the cleverest concepts I’m proud of starting.
-
-</p>
-                            <ul class="list-inline item-details">
-                                <li>Founders
-                                    <strong>Allan Wong, Flint Liu, Allen Young, Steven Lim
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>September 2014 - Present
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Philantrophy Organization
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <!---Template-->
-    <div class="project-modal modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <img src="img/project/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -688,9 +334,11 @@ I was one of the four founders who never expected such concept to gain such trac
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
 
-    <script src="js/owl.carousel.js"></script>
+   
+     <!--For animation based on user scroll -->
+    <script src='js/css3-animate-it.js'></script>
     <script src="js/typed.js"></script>
-    
+    <script src="js/skillbar.js"></script>
       
     <!-- Script for typing segment -->   
     <script>
@@ -707,6 +355,7 @@ I was one of the four founders who never expected such concept to gain such trac
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+
 
   </body>
 </html>
