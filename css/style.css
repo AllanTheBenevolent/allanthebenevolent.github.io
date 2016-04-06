@@ -64,27 +64,41 @@ a:focus{
 	text-decoration: none;
 }
 
-#gap{
-    background: url(../img/bg1.jpg);
+#aboutgap{
+    background: url(../img/baebeach.jpg);
     background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-#projects{
-    background: url(../img/bg3.jpg);
+#skillgap{
+    background: url(../img/candidbg1.jpg);
     background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	color: #fff;
+}
+
+#projectgap{
+    background: url(../img/waterbg.jpg);
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+#projects{
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color:#3b3a36;
         
 }
 
 #skills{
-    //*background: url(../img/bg4.jpg);*/
-    background-color: #c0dfd9;
     background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -94,7 +108,7 @@ a:focus{
 }
 
 #home{
-    background: url(../img/candid2.jpg);
+    background: url(../img/candibg2.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
