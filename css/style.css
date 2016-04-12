@@ -75,7 +75,7 @@ a:focus{
 #skillgap{
     background: url(../img/candidbg1.jpg);
     background-size: cover;
-	background-position: center;
+	background-position: center right;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -110,10 +110,9 @@ a:focus{
 #home{
     background: url(../img/candibg2.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: center right;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: auto;
 	min-height: 510px;	
 	padding-top: 10px;
 	color: #3b3a36;
@@ -239,7 +238,7 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 .service{
-	border: 1px solid #222;
+	
 	margin-top: 20px;
 	margin-bottom: 0px;
 	transition: all 0.3s;
@@ -249,14 +248,6 @@ a.down-btn span.fa.fa-angle-down {
 .service:hover>h4,
 .service:hover>span.fa{
 	color: #c0dfd9;
-}
-.service:hover{
-	border-color: #c0dfd9;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	cursor: pointer;
-	padding-top: 80px;
-	padding-bottom: 80px;
 }
 .service p{
 	font-size: 14px;
