@@ -534,7 +534,10 @@ section.success a.active {
 }
 
 
-
+img.jobsize{
+    max-width:80%;
+    max-height: 80%;
+}
 
 
 
